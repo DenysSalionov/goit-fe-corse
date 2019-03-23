@@ -1,0 +1,278 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.container-fuild {
+  width: auto;
+  position: relative;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.heading {
+  min-height: 90px;
+  padding-top: 40px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.logo {
+  margin-left: 30px;
+}
+nav {
+  float: right;
+}
+.menu {
+  list-style: none;
+  margin-left: 90px;
+  margin-top: 0px;
+}
+.menu li {
+  float: left;
+  display: block;
+  margin-right: 30px;
+}
+.menu li a {
+  color: black;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  transition-duration: 0.3s;
+}
+.menu li a:hover {
+  color: #1abc9c;
+}
+.img-slider {
+  width: 100%;
+  height: 600px;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+.slider-text {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-title {
+  font-size: 46px;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.slider-subtitle {
+  font-size: 16px;
+  font-weight: 100;
+}
+.slider-title,
+.slider-subtitle {
+  color: #fff;
+  text-transform: uppercase;
+}
+.slider-btn {
+  position: absolute;
+  background-color: #4e9b89;
+  opacity: 0.6;
+  width: 104px;
+  height: 104px;
+  top: 220px;
+  border: none;
+  cursor: pointer;
+  z-index: 11;
+}
+.btn-left {
+  margin-left: 15px;
+  left: 15px;
+}
+.btn-right {
+  margin-right: 15px;
+  right: 15px;
+}
+.slider-btn:hover {
+  opacity: 1;
+}
+.arrow {
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  border-left: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+}
+.ar-left {
+  transform: rotate(45deg);
+  margin-left: 15px;
+}
+.ar-right {
+  transform: rotate(-135deg);
+  margin-right: 15px;
+}
+.title {
+  color: #626262;
+  display: block;
+  font-size: 48px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 100px;
+}
+.title:after {
+  content: "";
+  background-color: #1abc9c;
+  display: block;
+  width: 164px;
+  height: 7px;
+  margin: 20px auto;
+}
+.cards {
+  margin: 0 0 100px 15px;
+}
+.card {
+  width: 255px;
+  height: 320px;
+  cursor: pointer;
+  margin: 0 15px 30px;
+  float: left;
+}
+.card-img-wrp {
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+.card-text {
+  height: 40px;
+  background: #323232;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  text-decoration: none;
+}
+.card-title,
+.card-price {
+  line-height: 40px;
+}
+.card-title {
+  padding-left: 14px;
+}
+.card-price {
+  float: right;
+  background: #9e9e9e;
+  padding: 0 12px;
+  transition-duration: 0.3s;
+}
+.card:hover .card-text {
+  background: #1abc9c;
+}
+.card:hover .card-price {
+  background: #7fd9c7;
+}
+.card-modal {
+  background: #323232;
+  left: 10px;
+  right: 10px;
+  top: 11px;
+  bottom: 11px;
+  z-index: 3;
+  opacity: 0;
+  transition-duration: 0.3s;
+  position: absolute;
+ 
+}
+.card:hover .card-modal {
+  opacity: 0.6;
+}
+.card-btn {
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  border: 1px solid #fff;
+  z-index: 10;
+  position: absolute;
+  opacity: 0;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.card:hover .card-btn {
+  opacity: 1;
+}
+.card-btn:hover {
+  background: #1abc9c;
+  border: transparent;
+}
+.btn-like {
+  left: 45px;
+  top: 90px;
+}
+.btn-clock {
+  right: 45px;
+  top: 90px;
+}
+.btn-link {
+  left: 102.5px;
+  top: 90px;
+}
+.card-btn-add {
+  height: 50px;
+  width: 165px;
+  background: #323232;
+  border: 1px solid #fff;
+  position: absolute;
+  opacity: 0;
+  transition-duration: 0.3s;
+  left: 45px;
+  top: 147.5px;
+  z-index: 12;
+  color: #fff;
+  text-align: right;
+  padding-right: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.card:hover .card-btn-add {
+  opacity: 1;
+}
+.card-btn-add:hover {
+  background: #1abc9c;
+  border: transparent;
+}
+.icon-cart {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+footer {
+  min-height: 90px;
+  padding-top: 40px;
+  background: #323232;
+  color: #fff;
+  text-align: center;
+}
+abbr {
+  color: #46bfa9;
+  text-decoration: none;
+  cursor: grab;
+}

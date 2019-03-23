@@ -1,0 +1,65 @@
+body {
+  font-family: "Playfair Display", serif;
+}
+
+.wrapper {
+  width: 900px;
+  margin: auto;
+  padding-top: 80px;
+}
+.menu {
+  margin-bottom: 100px;
+  list-style: none;
+  margin-left: 90px;
+  margin-top: 0px;
+}
+.menu li {
+  display: inline-block;
+}
+.menu li a {
+  color: #626262;
+  display: block;
+  width: 150px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+.menu li a:hover {
+  color: #03a9f4;
+}
+.box {
+  width: 420px;
+  display: inline-block;
+}
+.rigth {
+  margin-left: 56px;
+}
+h5 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #cccccc;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+h3 {
+  font-size: 30px;
+  color: #666666;
+  margin-top: 30;
+  margin-bottom: 45px;
+}
+p {
+  color: #626262;
+  margin-bottom: 135px;
+}
+img {
+  height: 280px;
+  width: 420px;
+}
+button {
+  height: 60px;
+  width: 160px;
+  margin-left: 370px;
+  margin-bottom: 70px;
+  margin-top: -80px;
+}
