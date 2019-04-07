@@ -1,96 +1,164 @@
-
-.container{
-    width: 940px;
-    margin: auto;
+.container {
+  width: 940px;
+  margin: auto;
 }
 
 .heading {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
-    padding-bottom: 10px;
-  }
-  .logo {
-    width: 100px;
-    display: flex;
-    align-items: center;
-  }
-  nav {
-    width: 485px;
-  }
-  .menu {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+.logo {
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+nav {
+  width: 485px;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.menu li a {
+  color: #222222;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  transition-duration: 0.2s;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.menu li a:hover {
+  color: #fed751;
+}
+.title {
+  padding-top: 110px;
+}
+.title h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.title p {
+  color: grey;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 80px;
+
+  font-style: italic;
   
-  .menu li a {
-    color: #222222;
-   font-size: 14px;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    
-    transition-duration: 0.2s;
-    padding: 0;
-margin: 0;
- }
-  .menu li a:hover {
-    color: #fed751;
-  }
-  .title {
-	padding-top: 110px;
+ 
+  font-family: "Droid Serif";
 
 }
-.title h2{
-	font-size: 40px;
-	font-weight: bold;
-text-align: center;
-text-transform: uppercase;
-margin: 0;
+.services {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 110px;
 }
-.title p
-{ color: grey;
-text-align: center;
-font-size: 16px;
-margin-top: 5px;
-margin-bottom: 80px;
+.services_item {
+  width: 290px;
+  text-align: center;
 }
-.services{
-    display: flex;
-    justify-content: space-between;
-  padding-bottom: 110px
+.services_item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: "Montserrat";
+  
+  font-weight: bold;
+
+
 
 }
-.services_item{
-	width: 290px;
-	text-align: center;
+.services_item p {
+  color: grey;
+  font-size: 14px;
+  line-height: 1.55em;
+  
+  font-family: "Roboto Slab";
+
 }
-.services_item h3{
-	font-size: 18px;
-margin-bottom: 5px;
+.contact{color: #ffffff}
+
+.container-fuild {
+  background-color: #222222;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: bottom;
+  height: 677px;
 }
-.services_item p{
-color: grey;
-font-size: 14px;
-line-height: 1.55em;
+.form-box {
+  display: flex;
+  justify-content: space-between;
 }
-.circule{
-    
-    
-    border: 3px solid #fed751 ;
-        width: 10em;
-        height: 10em;
-        
-        border-radius: 50%;
+input[name="name"]:focus:invalid,
+input[name="email"]:focus:invalid {
+  outline: 2px solid red;
+  transition: outline-color 0.7s;
 }
-.container-fuild{
-    background-color: #222222;
-    background-image: url(../img/map.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-position-y: bottom;
-    height: 677px;
-   
+input[name="name"]:focus:valid,
+input[name="email"]:focus:valid {
+  outline: 2px solid green;
+  transition: outline-color 0.7s;
+}
+input {
+  width: 455px;
+  height: 50px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  border-radius: 2px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+textarea {
+  padding: 20px;
+  min-width: 455px;
+  height: 210px;
+  box-sizing: border-box;
+}
+input::placeholder,
+textarea::placeholder{
+  color: #9e9d9d;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+text-transform: uppercase;}
+#send {
+  display: block;
+  margin: auto;
+  width: 240px;
+  height: 66px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fed136;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#send:hover {
+  transform: scale(1.01);
+}
+
+#send:active {
+  transform: scale(1);
 }
