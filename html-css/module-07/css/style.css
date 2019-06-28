@@ -55,7 +55,7 @@ nav {
   margin-top: 5px;
   margin-bottom: 80px;
   font-style: italic;
-  font-family: "Droid Serif";
+  font-family: "Droid Serif", sans-serif;
 }
 .services {
   display: flex;
@@ -69,14 +69,14 @@ nav {
 .services_item h3 {
   font-size: 18px;
   margin-bottom: 5px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 .services_item p {
   color: grey;
   font-size: 14px;
   line-height: 1.55em;
-  font-family: "Roboto Slab";
+  font-family: "Roboto Slab", sans-serif;
 }
 .contact {
   color: #ffffff;
@@ -94,12 +94,14 @@ nav {
   justify-content: space-between;
 }
 input[name="name"]:focus:invalid,
-input[name="email"]:focus:invalid {
+input[name="email"]:focus:invalid,
+textarea[name="body"]:focus:invalid {
   outline: 2px solid red;
   transition: outline-color 0.7s;
 }
 input[name="name"]:focus:valid,
-input[name="email"]:focus:valid {
+input[name="email"]:focus:valid,
+textarea[name="body"]:focus:valid {
   outline: 2px solid green;
   transition: outline-color 0.7s;
 }
@@ -122,7 +124,7 @@ textarea {
 input::placeholder,
 textarea::placeholder {
   color: #9e9d9d;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -136,7 +138,7 @@ textarea::placeholder {
   border-radius: 5px;
   background-color: #fed136;
   color: #ffffff;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
